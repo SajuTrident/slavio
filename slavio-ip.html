@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slavio ip</title>
+  <link rel="icon shortcut" href="./favicon.png" type="image/png">
+  <style type="text/css" media="all">
+    body{
+      background-color: #212121;
+      width: 384px;
+      padding: 0px;
+      margin: 0px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    a{
+      color: green;
+      text-decoration: none;
+    }
+    .header{
+      background-color: #FF6000;
+      width: 384px;
+      height: 50px;
+      top: 0px;
+      position: fixed;
+    }
+    .header h3{
+      color: #FFFF;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 8px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .container{
+      width: 370px;
+      height: 100%;
+      margin-top: 100px;
+      color: #FFFF;
+    }
+    .title{
+      color: #FF6000;
+      text-align: center;
+    }
+    .p1{
+      margin-left: 10px;
+    }
+    .p2{
+      margin-top: 30px;
+    }
+    .container img{
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+<!--Header-->
+  <div class="header">
+    <h3>SLAVIO</h3>
+  </div>
+  
+  <!--Blog body-->
+  <div class="container">
+    <h2 class="title">HOW TO GET SLAVIO IP EASY</h2>
+    <p class="p1 p2" id="ppp">First step take interview before joining this server and whitelist. Second step use this ip and joine slavio minecraft server. </p>
+    <p class="p1"> Enjoy your stay <span><a href="">#here</a></span>.</p>
+    <center>
+    <img src="./ip.jpg" alt="Slavio" />
+    </center>
+    <ul>
+      <li>Joine slavio <span><a href="https://discord.gg/FkrXSUPNnf">#Discord</a></span> server.</li>
+      <li>Take interview in <span><a href="https://discord.com/channels/942013559271993385/953120218526388295">#Take-interview</a></span>.</li>
+      <li>Read rules at <span><a href="https://discord.com/channels/942013559271993385/956139425912459274">#⚡-Rules</a></span></li>
+      <li>Joine <span><a href="https://play.google.com/store/apps/details?id=com.mojang.minecraftpe">#minecraft</a></span> server.</li>
+    </ul>
+    <p class="p1">How to take interview tutorial <span><a href="./take-interview.html">#Click-here</a></span> to read.</p>
+    <p class="p1 p2">Donate <span><a href="https://rzp.io/i/09q2ERO9o">#here</a></span>.</p>
+    <p class="p1">Thank you for reading.</p>
+  </div>
+  <script>
+    const paragraph = document.querySelector("#ppp");
+    const userName = localStorage.getItem("Name");
+    if(userName){
+      paragraph.innerHTML = "Hello " + userName.toUpperCase() + ". First step take interview before joining this server and whitelist. Second step use this ip and joine slavio minecraft server. ";
+    }
+  </script>
+</body>
+</html>

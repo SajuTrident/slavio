@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slavio</title>
+  <link rel="icon shortcut" href="./favicon.png" type="image/png">
+  <!-- HTML -->
+  <!-- Loader Styles -->
+  <style type="text/css" media="all">
+   body{
+     margin: 0px;
+     padding: 0px;
+    width: 384px;
+    background-color: #212121;
+  }
+  .loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #212121;
+  height: 100%;
+  width: 384px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.disppear{
+  animation: vanish 3s forwards;
+}
+@keyframes vanish {
+  100%{
+    opacity: 1;
+    visibility: hidden;
+  }
+}
+.container{
+  width: 70px;
+  margin: 70px auto;
+}
+.dot{
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.dot1{
+  background-color: #FF6000;
+  animation: jump-up 0.6s 0.1s linear infinite;
+}
+.dot2{
+  background-color: /*#42445A*/#FFFF;
+  animation: jump-up 0.6s 0.2s linear infinite;
+}
+.dot3{
+  background-color: #FF6000;
+  animation: jump-up 0.6s 0.3s linear infinite;
+}
+@keyframes jump-up{
+  50%{
+    transform: translate(0,15px);
+  }
+}
+    </style>
+      <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--Loader script-->
+  <script>var loader = document.querySelector(".loader")
+    window.addEventListener("load", vanish);
+   setTimeout(() => {
+      function vanish() {
+    loader.classList.add("disppear");
+    }
+   }, 300);
+   </script>
+    <!--Loader ui-->
+  <div class="loader">
+    <div class="container">   
+    <div class="dot dot1"></div>
+    <div class="dot dot2"></div>
+    <div class="dot dot3"></div>
+    </div>
+    </div>
+    <!--Rediarect-->
+    <script>
+    const token = localStorage.getItem("Token");
+    const userName = localStorage.getItem("Name");
+    const userEmail = localStorage.getItem("Email");
+    const password = localStorage.getItem("Password");
+      setTimeout(() =>{
+        if(token && userName && userEmail && password && token === token){
+        location.replace("./home.html");
+      }else{
+        location.replace("./login.html")
+      }
+      },3000);
+    </script>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>

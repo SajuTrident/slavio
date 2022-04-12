@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link rel="icon shortcut" href="./favicon.png" type="image/png">
+  <style type="text/css" media="all">
+    body{
+      background-color: #212121;
+      width: 384px;
+      padding: 0px;
+      margin: 0px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .header{
+      background-color: #FF6000;
+      width: 384px;
+      height: 50px;
+      top: 0px;
+      position: fixed;
+    }
+    .header h3{
+      color: #FFFF;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 8px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .interview{
+      margin-top: 180px;
+      color: white;
+    }
+    .interview h3{
+      font-size: 10px;
+      text-align: center;
+    }
+    .features-container{
+      margin-top: 0px;
+  width: 384px;
+  height: 100%;
+}
+.video-container{
+  width: 320px;
+  height: 200px;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.thumbnail-c img{
+  width: 310px;
+  height: 170px;
+  border-radius: 5px;
+  color: #FFFF;
+}
+.ch-logo img{
+  width: 40px;
+  border-radius: 50%;
+}
+.more-c{
+  color: #FFFF;
+  display: flex;
+  width: 320;
+}
+.vd-title h3{
+  font-size: 15px;
+  margin: 5px;
+}
+.f-txt{
+  display: flex;
+  width: 384px;
+  margin-top: 30px;
+}
+/*.f-txt img{
+  height: 20px;
+  margin: 5px;
+}*/
+.f-txt h3{
+  font-size: 10px;
+  color: #FFFF;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav{
+  background-color: #303030;
+  margin-top: 30px;
+  height: 80px;
+  width: 384px;
+  position: fixed;
+  top: 0px;
+}
+.nav-bar{
+  background-color: #FF6000;
+  height: 30px;
+  width: 384px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.nav-left{
+  width: 96px;
+  text-align: center;
+  height: 30px;
+}
+.nav-left-right{
+  width: 96px;
+  text-align: center;
+  height: 30px;
+}
+.nav-right-left{
+  width: 96px;
+  text-align: center;
+  height: 30px;
+}
+.nav-right{
+  width: 96px;
+  text-align: center;
+  height: 30px;
+}
+.sp{
+  border: none;
+  font-weight: 600;
+  color: #FFFF;
+}
+.nav-up{
+  background-color: #FF6000;
+  margin-top: 2px;
+  height: 10px;
+  width: 384px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.nav-up p{
+  color: transparent;
+}
+.sp:hover{
+  font-weight: 600;
+  color: #FF6000;
+  background-color: #FFFF;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+/*.tp{
+  font-weight: 600;
+  color: #FF6000;
+  background-color: #FFFF;
+  border: none;
+}*/
+.nav img{
+  width: 375px;
+  height: 50px;
+  margin-top: 5px;
+}
+  </style>
+</head>
+<body>
+  <!--Project-->
+<script>
+  if(localStorage.getItem("Token") && localStorage.getItem("Name") && localStorage.getItem("Email") && localStorage.getItem("Password")){
+    console.log("This home page");
+  }else{
+    location.replace("./login.html");
+  }
+</script>
+  <!--Nav bar-->
+  <div class="nav">
+    <!--Header-->
+  <div class="header">
+    <h3>SLAVIO</h3>
+  </div>
+    <!--<center>
+    <img src="./ads.jpg" alt="Advertisement" /></center>-->
+    <!--Advertisment-->
+    <script>
+var pubid = '8986524169236943';
+<!-- Banner Ad Slot Id Here -->
+var s1 = '9329507219';
+var pn1 = 'com.FindThePairGame';
+var _0x6717=["\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x6F\x6F\x67\x6C\x65\x61\x64\x73\x2E\x67\x2E\x64\x6F\x75\x62\x6C\x65\x63\x6C\x69\x63\x6B\x2E\x6E\x65\x74\x2F\x6D\x61\x64\x73\x2F\x67\x6D\x61\x3F\x70\x72\x65\x71\x73\x3D\x30\x26\x75\x5F\x73\x64\x3D\x31\x2E\x35\x26\x75\x5F\x77\x3D\x33\x32\x30\x26\x6D\x73\x69\x64\x3D","\x26\x63\x61\x70\x3D\x61\x26\x6A\x73\x3D\x61\x66\x6D\x61\x2D\x73\x64\x6B\x2D\x61\x2D\x76\x33\x2E\x33\x2E\x30\x26\x74\x6F\x61\x72\x3D\x30\x26\x69\x73\x75\x3D\x57\x25\x32\x37\x2B\x4D\x61\x74\x68\x2E\x66\x6C\x6F\x6F\x72\x25\x32\x38\x4D\x61\x74\x68\x2E\x72\x61\x6E\x64\x6F\x6D\x25\x32\x38\x25\x32\x39\x2A\x39\x25\x32\x39\x2B\x25\x32\x37\x45\x45\x41\x42\x42\x38\x45\x45\x25\x32\x37\x2B\x4D\x61\x74\x68\x2E\x66\x6C\x6F\x6F\x72\x25\x32\x38\x4D\x61\x74\x68\x2E\x72\x61\x6E\x64\x6F\x6D\x25\x32\x38\x25\x32\x39\x2A\x39\x39\x25\x32\x39\x2B\x25\x32\x37\x43\x32\x42\x45\x37\x37\x30\x42\x36\x38\x34\x44\x25\x32\x37\x2B\x4D\x61\x74\x68\x2E\x66\x6C\x6F\x6F\x72\x25\x32\x38\x4D\x61\x74\x68\x2E\x72\x61\x6E\x64\x6F\x6D\x25\x32\x38\x25\x32\x39\x2A\x39\x39\x39\x39\x39\x25\x32\x39\x2B\x25\x32\x37\x45\x43\x42\x26\x63\x69\x70\x61\x3D\x30\x26\x66\x6F\x72\x6D\x61\x74\x3D\x33\x32\x30\x78\x35\x30\x5F\x6D\x62\x26\x6E\x65\x74\x3D\x77\x69\x26\x61\x70\x70\x5F\x6E\x61\x6D\x65\x3D\x31\x2E\x61\x6E\x64\x72\x6F\x69\x64\x2E","\x26\x68\x6C\x3D\x65\x6E\x26\x75\x5F\x68\x3D\x25\x32\x37\x2B\x4D\x61\x74\x68\x2E\x66\x6C\x6F\x6F\x72\x25\x32\x38\x4D\x61\x74\x68\x2E\x72\x61\x6E\x64\x6F\x6D\x25\x32\x38\x25\x32\x39\x2A\x39\x39\x39\x25\x32\x39\x2B\x25\x32\x37\x26\x63\x61\x72\x72\x69\x65\x72\x3D\x25\x32\x37\x2B\x4D\x61\x74\x68\x2E\x66\x6C\x6F\x6F\x72\x25\x32\x38\x4D\x61\x74\x68\x2E\x72\x61\x6E\x64\x6F\x6D\x25\x32\x38\x25\x32\x39\x2A\x39\x39\x39\x39\x39\x39\x25\x32\x39\x2B\x25\x32\x37\x26\x70\x74\x69\x6D\x65\x3D\x30\x26\x75\x5F\x61\x75\x64\x69\x6F\x3D\x34\x26\x75\x5F\x73\x6F\x3D\x70\x26\x6F\x75\x74\x70\x75\x74\x3D\x68\x74\x6D\x6C\x26\x72\x65\x67\x69\x6F\x6E\x3D\x6D\x6F\x62\x69\x6C\x65\x5F\x61\x70\x70\x26\x75\x5F\x74\x7A\x3D\x2D\x25\x32\x37\x2B\x4D\x61\x74\x68\x2E\x66\x6C\x6F\x6F\x72\x25\x32\x38\x4D\x61\x74\x68\x2E\x72\x61\x6E\x64\x6F\x6D\x25\x32\x38\x25\x32\x39\x2A\x39\x39\x39\x25\x32\x39\x2B\x25\x32\x37\x26\x63\x6C\x69\x65\x6E\x74\x5F\x73\x64\x6B\x3D\x31\x26\x65\x78\x3D\x31\x26\x63\x6C\x69\x65\x6E\x74\x3D\x63\x61\x2D\x61\x70\x70\x2D\x70\x75\x62\x2D","\x26\x73\x6C\x6F\x74\x6E\x61\x6D\x65\x3D","\x26\x63\x61\x70\x73\x3D\x69\x6E\x6C\x69\x6E\x65\x56\x69\x64\x65\x6F\x5F\x69\x6E\x74\x65\x72\x61\x63\x74\x69\x76\x65\x56\x69\x64\x65\x6F\x5F\x6D\x72\x61\x69\x64\x31\x5F\x63\x6C\x69\x63\x6B\x54\x72\x61\x63\x6B\x69\x6E\x67\x5F\x73\x64\x6B\x41\x64\x6D\x6F\x62\x41\x70\x69\x46\x6F\x72\x41\x64\x73\x26\x6A\x73\x76\x3D\x31\x38\x22\x20\x68\x65\x69\x67\x68\x74\x3D\x22\x35\x35\x22\x20\x77\x69\x64\x74\x68\x3D\x22\x33\x32\x35\x22\x20\x66\x72\x61\x6D\x65\x62\x6F\x72\x64\x65\x72\x3D\x22\x30\x22\x20\x73\x63\x72\x6F\x6C\x6C\x69\x6E\x67\x3D\x22\x6E\x6F\x22\x20\x77\x69\x64\x74\x68\x3D\x22\x30\x22\x20\x68\x65\x69\x67\x68\x74\x3D\x22\x30\x22\x20\x6D\x61\x72\x67\x69\x6E\x77\x69\x64\x74\x68\x3D\x22\x30\x22\x20\x6D\x61\x72\x67\x69\x6E\x68\x65\x69\x67\x68\x74\x3D\x22\x30\x22\x20"];var src1=_0x6717[0]+ pn1+ _0x6717[1]+ pn1+ _0x6717[2]+ pubid+ _0x6717[3]+ s1+ _0x6717[4]
+</script>
+
+  <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
+    <link type="text/css" href="css/tabs-1.css" rel="stylesheet" /> 
+    <script src="jquery.tools.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+       $("ul.tabs").tabs("div.panes > div");
+     });
+ </script>
+
+     <!-- BANNER 1 -->
+    <tr>
+       <td> <script type="text/javascript">
+var _0x28f9=["\x3C\x68\x32\x20\x61\x6C\x69\x67\x6E\x3D\x22\x63\x65\x6E\x74\x65\x72\x22\x3E\x3C\x69\x66\x72\x61\x6D\x65\x20\x73\x72\x63\x3D\x22","\x2F\x3E\x3C\x2F\x69\x66\x72\x61\x6D\x65\x3E\x3C\x2F\x68\x31\x3E","\x77\x72\x69\x74\x65"];document[_0x28f9[2]](_0x28f9[0]+ src1+ _0x28f9[1])
+</script>
+    <div class="nav-up">
+      <p>jjggfd</p>
+    </div>
+  <div class="nav-bar">
+    <div class="nav-left">
+      <span class="sp tp" onclick="home()">HOME</span>
+    </div>
+    <div class="nav-left-right">
+      <span class="sp" onclick="server()">SERVER</span>
+    </div>
+    <div class="nav-right-left">
+      <span class="sp" onclick="about()">ABOUT</span>
+    </div>
+    <div class="nav-right">
+      <span class="sp" onclick="alerting()">ALERT</span>
+    </div>
+    <script>
+      function home(){
+        location.replace("./home.html");
+      }
+      function server(){
+        location.replace("./server.html");
+      }
+      function about(){
+        location.replace("./about.html");
+      }
+      function alerting(){
+        location.replace("./alert.html");
+      }
+    </script>
+  </div>
+  </div>
+  <!--Interview-->
+  <div class="interview">
+    <h3 id="wel">WELCOME</h3>
+  </div>
+  
+  <div class="features-container">
+  <!--Video section-->
+<div class="features-container">
+  <div onclick="slavioIp()" class="video-container">
+    <div class="thumbnail-c">
+      <img src="./slavio.jpg" alt="Fivo"  />
+    </div>
+    <div class="more-c">
+      <div class="ch-logo">
+      <img src="./favicon.png" alt="Fivo" />
+      </div>
+      <div class="vd-title">
+        <h3>How to get slavio minecraft server ip | Team Fivo</h3>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Video section-->
+<div class="features-container">
+  <div onclick="takeInterview ()" class="video-container">
+    <div class="thumbnail-c">
+      <img src="./slavio2.jpg" alt="Fivo"  />
+    </div>
+    <div class="more-c">
+      <div class="ch-logo">
+      <img src="./favicon.png" alt="Fivo" />
+      </div>
+      <div class="vd-title">
+        <h3>How to take interview in slavio minecraft | Team Fivo</h3>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <!--Project-->
+  <script>
+    const welcom = document.querySelector("#wel");
+    const userName = localStorage.getItem("Name");
+    const useeName = userName.toUpperCase();
+    welcom.innerHTML = 'FEEDS FOR ' + useeName;
+    function slavioIp(){
+      location.replace("./slavio-ip.html")
+    }
+    function takeInterview(){
+      location.replace("./take-interview.html")
+    }
+  </script>
+</body>
+</html>
